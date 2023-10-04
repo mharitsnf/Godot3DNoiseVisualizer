@@ -28,5 +28,5 @@ shader_parameter/ambient_light = Vector3(1, 1, 1)
 shader_parameter/absorption_coef = 5e-06
 shader_parameter/scattering_coef = 0.02
 shader_parameter/vm_step_count = 100
-shader_parameter/bb_min = Vector3(-2, -2, -2)
-shader_parameter/bb_max = Vector3(2, 2, 2)
+shader_parameter/bb_min = Vector3(-10, -10, -10)
+shader_parameter/bb_max = Vector3(10, 10, 10)
