@@ -99,29 +99,6 @@ vec4 volume_marcher(vec3 ro, vec3 rd, float len, vec3 col) {
 	return vec4(col + vec3(total_density), 1.);
 }
 
-//vec4 volume_marcher(vec3 ro, vec3 rd, float len, vec3 col) {
-//	vec3 p = ro;
-//	float step_size = len / float(vm_step_count - 1);
-//	float extinction_coef = absorption_coef + scattering_coef;
-//
-//	float transmittance = 1.;
-//	vec3 illumination = col;
-//
-//	for (int i = 0; i < vm_step_count; ++i) {
-//		float cur_density = sample_density(p);
-//		transmittance *= exp(- cur_density * step_size * extinction_coef);
-//
-//		vec3 in_scattering = ambient_light;
-//		vec3 out_scattering = vec3(scattering_coef * cur_density);
-//		vec3 cur_light = in_scattering * out_scattering;
-//
-//		illumination += transmittance * cur_light * step_size;
-//		p += rd * step_size;
-//	}
-//
-//	return vec4(illumination, transmittance);
-//}
-
 
 void vertex() {
 	POSITION = vec4(VERTEX, 1.0);
