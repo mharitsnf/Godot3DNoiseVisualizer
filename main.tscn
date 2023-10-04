@@ -15,6 +15,6 @@ size = Vector2(2, 2)
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_p8ux5")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="Quad" type="MeshInstance3D" parent="."]
 mesh = SubResource("QuadMesh_rjpq6")
 surface_material_override/0 = ExtResource("1_sq4og")
